@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог гостиниц</title>
+  </head>
+<body>
+  <header class="page-header">
+    <a class="logo-link" href="index.html">
+      <img class="logo" src="./img/png/logo.png" width="139px" height="70px" alt="Логотип города Седона">
+    </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-current">Гостиницы</a>
+        </li>
+      </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Добавить в избранное</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Забронировать</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <main class="page-catalog">
+    <header class="page-catalog-header">
+      <h1 class="page-catalog-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</a>
+        </li>
+      </ul>
+    </header>
+    <section class="catalog-product">
+      <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Инфраструктура:</legend>
+          <input class="catalog-filter-item" id="infrastructure" name="infrastructure" type="checkbox" checked>
+          <label for="infrastructure">Бассейн</label>
+          <input class="catalog-filter-item" id="parcking" name="parcking" type="checkbox" checked>
+          <label for="parcking">Парковка</label>
+          <input class="catalog-filter-item" id="wi-fi" name="wi-fi" type="checkbox">
+          <label for="wi-fi">Wi-Fi</label>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Тип жилья:</legend>
+          <input class="catalog-filter-item" id="hotel" name="hotel" type="radio" checked>
+          <label for="hotel">Гостиница</label>
+          <input class="catalog-filter-item" id="motel" name="motel" type="radio">
+          <label for="motel">Мотель</label>
+          <input class="catalog-filter-item" id="apartment" name="apartment" type="radio">
+          <label for="apartment">Апартаменты</label>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <input class="catalog-filter-item" id="booking-price" name="booking-price" type="range" min="0" max="11000" step="1" value="9000">
+          <button class="button filter-submit-button" type="submit" name="filter-submite" value="Применить">Применить</button>
+          <button class="button filter-reset-button" type="reset">Сбросить</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
