@@ -53,7 +53,8 @@ body {
 
 .glass-wrapper{
   width: 1060px;
-  margin: 0 auto;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .main-navigation {
@@ -67,20 +68,19 @@ body {
 
 .navigation-list {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   align-items: center;
-  width: 365px;
+  width: 500px;
   margin: 0;
-  margin-right: 282px;
+  margin-right: auto;
   padding-left: 0;
   text-align: center;
 }
 
 .navigation-list-user {
   margin-right: 0;
-  width: 264px;
-  text-align: end;
+  justify-content: flex-end;
+  width: 300px;
 }
 
 .navigation-item {
@@ -182,7 +182,6 @@ body {
 .advantages-item {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
 
 }
@@ -193,7 +192,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 384px;
+  padding-top: 90px;
+  padding-bottom: 80px;
 }
 
 .adventages-rectangle {
@@ -210,7 +210,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 25px;
-  width: 198px;
+  width: 172px;
 }
 
 .advantages-icon {
@@ -247,7 +247,6 @@ body {
   line-height: 21px;
   color: #333333;
   width: 265px;
-  height: 73px;
   text-align: center;
   margin: 0;
 }
@@ -255,6 +254,14 @@ body {
 
 .advantages-description-white{
   color: #ffffff;
+}
+
+.advantages-description-width-242 {
+  width: 242px;
+}
+
+.advantages-description-width-191 {
+  width: 191px;
 }
 
 .advantages-item {
@@ -465,6 +472,7 @@ body {
 
 .catalog-filter {
   display: flex;
+  align-items: flex-start;
 
 }
 
@@ -485,7 +493,7 @@ body {
 .catalog-filter-group {
   border: none;
   margin: 0;
-  margin-right: 67px;
+  margin-right: auto;
   margin-bottom: 83px;
   padding: 0;
 }
@@ -654,7 +662,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   display: inline-block;
-  padding: 9px 15px 10px 15px;
+  padding: 9px 22px 10px 22px;
   margin: 0;
   background: #756257;
   border-radius: 4px;
