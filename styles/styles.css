@@ -81,7 +81,8 @@ body {
 .navigation-list-user {
   margin-right: 0;
   justify-content: flex-end;
-  width: 300px;
+  align-items: center;
+  width: 320px;
 }
 
 .navigation-item {
@@ -92,6 +93,14 @@ body {
   font-size: 20px;
   line-height: 26px;
   margin-right: 34px;
+}
+
+.navigation-user-item {
+  margin-right: 0;
+}
+
+.navigation-user-item:nth-child(2) {
+  margin-right: 20px;
 }
 
 .navigation-item:last-child {
@@ -110,6 +119,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  padding: 24px 12px;
 }
 
 .navigation-link-current {
@@ -475,16 +485,15 @@ body {
   background-image: url("../images/jpeg/catalog-background.jpg");
   background-size: cover;
   color:#ffffff;
+  padding-top: 35px;
 }
 
 
 .page-inner-title {
   margin: 0;
-  margin-bottom: 5px;
   font-weight: bold;
   font-size: 60px;
   line-height: 78px;
-  padding-top: 35px;
 }
 
 .breadcrumbs-link {
@@ -497,6 +506,7 @@ body {
 
 .breadcrumbs-list {
   display: flex;
+  align-items: center;
   gap: 10px;
   list-style: none;
   margin: 0;
@@ -508,7 +518,7 @@ body {
 .catalog-filter {
   display: grid;
   grid-template-columns: min-content min-content min-content min-content;
-  grid-template-rows: min-content 80px;
+  grid-template-rows: min-content 83px;
   column-gap: 67px;
   align-items: flex-start;
 }
@@ -590,12 +600,13 @@ body {
 .sorting {
   display: flex;
   flex-wrap: nowrap;
+  padding-top: 44px;
+  margin-bottom: 53px;
 }
 
 .sorting-wrapper {
   display: flex;
   align-items: center;
-  padding-top: 30px;
 }
 
 .search-filters-results {
@@ -643,7 +654,6 @@ body {
   row-gap: 10px;
   list-style: none;
   padding-left: 0;
-  padding-top: 53px;
   margin: 0;
   margin-bottom: 30px;
   padding-bottom: 34px;
@@ -653,7 +663,8 @@ body {
 .product-card-article {
   display: grid;
   grid-template-columns: 150px 150px;
-  grid-template-rows: min-content min-content min-content min-content;
+  grid-template-rows: 206px min-content min-content min-content;
+  row-gap: 16px;
   padding: 20px;
 }
 
@@ -662,7 +673,6 @@ body {
 }
 
 .product-card-image {
-  margin-bottom: 16px;
   grid-row: 1/2;
 }
 
@@ -672,7 +682,6 @@ body {
   line-height: 31px;
   color: #000000;
   margin: 0;
-  margin-bottom: 16px;
   grid-row: 2/3;
   grid-column: 1/-1;
 }
@@ -680,7 +689,6 @@ body {
 .search-results-cards-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 16px;
   grid-row: 3/4;
 }
 
@@ -701,7 +709,6 @@ body {
   width: 299px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 16px;
   grid-row: 4/5;
 }
 
@@ -782,7 +789,6 @@ body {
   align-items: center;
   border-top: 1px solid #E6E6E6;
   padding-top: 30px;
-
 }
 
 .pagination-link {
