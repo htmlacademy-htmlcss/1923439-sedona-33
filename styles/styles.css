@@ -82,7 +82,7 @@ body {
   margin-right: 0;
   justify-content: flex-end;
   align-items: center;
-  width: 320px;
+  width: 330px;
 }
 
 .navigation-item {
@@ -93,6 +93,11 @@ body {
   font-size: 20px;
   line-height: 26px;
   margin-right: 34px;
+}
+
+.navigation-item .navigation-link-current {
+  border-bottom: 2px solid  #756257;
+  padding-bottom: 20px;
 }
 
 .navigation-user-item {
@@ -113,6 +118,7 @@ body {
   text-decoration: none;
   color: #000000;
   font-weight: bold;
+  padding: 20px 0;
 }
 
 .navigation-link-user {
@@ -122,13 +128,16 @@ body {
   padding: 24px 12px;
 }
 
-.navigation-link-current {
-  border-bottom: 2px solid  #756257;
-  padding-bottom: 20px;
+.navigation-link:hover {
+  color: #756257;
+}
+
+.navigation-link-user:hover {
+  fill: #756257;
 }
 
 .button-booking-link {
-  padding: 8px 34px;
+  padding: 6px 34px;
   background: #756257;
   border-radius: 4px;
   font-weight: bold;
@@ -137,6 +146,27 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   align-self: center;
+  box-sizing: border-box;
+}
+
+.button-booking-link:hover{
+  background-color: #615048;
+  color: #ffffff;
+}
+
+.button-booking-link:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.navigation-link:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.button-booking-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 .main-container {
@@ -212,6 +242,10 @@ body {
 }
 
 .advantages-item-home {
+  background-image: url("../images/svg/catalog-icon-home.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: 50% 30%;
   padding-top: 89px;
   padding-bottom: 79px;
 }
@@ -241,6 +275,29 @@ body {
   margin-bottom: 30px;
   width: 172px;
 }
+
+.advantages-title-home {
+  padding-top: 110px;
+  background-image: url("../images/svg/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+.advantages-title-food {
+  padding-top: 110px;
+  background-image: url("../images/svg/icon-eat.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+.advantages-title-gift {
+  padding-top: 110px;
+  background-image: url("..//images/svg/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+
 
 
 .advantages-item-home.advantages-item-title {
@@ -372,6 +429,21 @@ body {
   color: #FFFFFF;
 }
 
+.navigation-catalog-link:hover {
+  background: #615048;
+  border-radius: 10px;
+}
+
+.navigation-catalog-link:focus {
+  background: #615048;
+  outline: 3px solid #83B3D3;
+  box-sizing: border-box;
+}
+
+.navigation-catalog-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
 
 .subscribe {
   background-color: #68A2CA;
@@ -447,8 +519,8 @@ body {
 .page-footer {
   background-color: #ffffff;
   color: #000000;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .footer-wrapper {
@@ -459,12 +531,32 @@ body {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 107px;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.social-link:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+}
+
+.social-link:active {
+  opacity: 0.3;
+  border: none;
 }
 
 
@@ -479,6 +571,37 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
+.footer-link {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.footer-link:hover {
+  color: #756257;
+}
+
+.partner-logo {
+  fill: #000000;
+}
+
+.partner-logo:hover {
+  fill: #756257;
+}
+
+.footer-link:focus {
+  outline: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.footer-link:active {
+  opacity: 0.3;
+  outline: none;
+}
+
 
 .catalog-product {
   background-color: #68A2CA;
