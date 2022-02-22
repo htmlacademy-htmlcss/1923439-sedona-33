@@ -153,6 +153,10 @@ body {
   letter-spacing: -0.1em;
 }
 
+.navigation-link-search:active::after {
+  color: rgba(255, 255, 255, 0.3)
+}
+
 .navigation-link:hover {
   color: #756257;
 }
