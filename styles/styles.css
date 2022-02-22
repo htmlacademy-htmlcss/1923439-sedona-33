@@ -128,6 +128,31 @@ body {
   padding: 24px 12px;
 }
 
+.navigation-link-search {
+  position: relative;
+}
+
+.navigation-link-search::after {
+  content: "12";
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 13px;
+  letter-spacing: -0.1em;
+}
+
 .navigation-link:hover {
   color: #756257;
 }
