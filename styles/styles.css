@@ -211,6 +211,7 @@ body {
 
 .navigation-link:active {
   color: rgba(117, 98, 87, 0.3);
+  outline: none;
 }
 
 .button-booking-link:active {
