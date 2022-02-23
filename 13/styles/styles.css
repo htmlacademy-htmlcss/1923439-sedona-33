@@ -62,6 +62,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+  padding: 16px 0 19px 0;
 }
 
 
@@ -69,6 +70,7 @@ body {
   position: absolute;
   top: 0;
   display: block;
+  z-index: 1;
 
 }
 
@@ -109,7 +111,7 @@ body {
   position: absolute;
   bottom: -22px;
   left: -1px;
-  width: 70px;
+  width: 100%;
   height: 0;
   border-bottom: 2px solid #756257;
 }
@@ -127,18 +129,20 @@ body {
 }
 
 .navigation-link {
+  font-family: "PT Sans",sans-serif;
+  font-style: normal;
+  font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   text-decoration: none;
   color: #000000;
-  font-weight: bold;
 }
 
 .navigation-link-user {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 24px 12px;
+  padding: 5px 12px;
 }
 
 .navigation-link-search {
@@ -149,7 +153,7 @@ body {
   content: "12";
   position: absolute;
   left: 25px;
-  top: 15px;
+  top: -1px;
   width: 20px;
   height: 20px;
   color: #ffffff;
@@ -178,6 +182,18 @@ body {
   fill: #756257;
 }
 
+.navigation-link.navigation-link-current:hover,
+.navigation-link.navigation-link-current:focus,
+.navigation-link.navigation-link-current:active {
+  font-family: "PT Sans",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000000;
+}
+
 .button-booking-link {
   padding: 8px 34px;
   background-color: #756257;
@@ -202,8 +218,15 @@ body {
   box-sizing: border-box;
 }
 
+.navigation-link:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 .navigation-link:active {
   color: rgba(117, 98, 87, 0.3);
+  outline: none;
 }
 
 .button-booking-link:active {
@@ -698,13 +721,13 @@ body {
 
 .breadcrumbs-item {
   position: relative;
-  padding-right: 26px;
+  padding-right: 5px;
 }
 
 .breadcrumbs-item:first-child::after {
   content: "";
   position: absolute;
-  right: 5px;
+  right: -5px;
   top: 7px;
   width: 5px;
   height: 8px;
@@ -1146,7 +1169,14 @@ body {
   outline: none;
 }
 
-.pagination-current {
+.pagination-link-current {
+  color: #000000;
+  background: #F2F2F2;
+}
+
+.pagination-link-current:hover,
+.pagination-link-current:focus,
+.pagination-link-current:active {
   color: #000000;
   background: #F2F2F2;
 }
