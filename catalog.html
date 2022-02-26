@@ -73,36 +73,69 @@
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <div class="filter-wrapper">
-                  <input class="catalog-filter-item" id="swimming-pool" name="swimming-pool" type="checkbox" checked>
-                  <label class="catalog-filter-label" for="swimming-pool">Бассейн</label>
+                    <label class="control">
+                      <input class="catalog-filter-item visually-hidden" name="swimming-pool" type="checkbox" checked>
+                      <span class="control-mark "></span>
+                      <span class="catalog-filter-label">Бассейн</span>
+                    </label>
                 </div>
                 <div class="filter-wrapper">
-                  <input class="catalog-filter-item" id="parcking" name="parcking" type="checkbox" checked>
-                  <label class="catalog-filter-label" for="parcking">Парковка</label>
+                  <label class="control">
+                    <input class="catalog-filter-item visually-hidden"  name="parcking" type="checkbox" checked>
+                    <span class="control-mark"></span>
+                    <span class="catalog-filter-label">Парковка</span>
+                    </label>
                 </div>
                 <div class="filter-wrapper">
-                  <input class="catalog-filter-item" id="wi-fi" name="wi-fi" type="checkbox">
-                  <label class="catalog-filter-label" for="wi-fi">Wi-Fi</label>
+                  <label class="control">
+                    <input class="catalog-filter-item visually-hidden"  name="wi-fi" type="checkbox">
+                    <span class="control-mark "></span>
+                    <span class="catalog-filter-label">Wi-Fi</span>
+                    </label>
                 </div>
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <div class="filter-wrapper">
-                  <input class="catalog-filter-item" id="hotel" name="product-type"  type="radio" value="hotel" checked>
-                  <label class="catalog-filter-label" for="hotel">Гостиница</label>
+                  <label class="control">
+                    <input class="catalog-filter-item visually-hidden"  name="product-type"  type="radio" value="hotel" checked>
+                    <span class="control-mark control-mark-radio"></span>
+                    <span class="catalog-filter-label">Гостиница</span>
+                  </label>
                 </div>
                 <div class="filter-wrapper">
-                  <input class="catalog-filter-item" id="motel" name="product-type" type="radio" value="motel">
-                  <label class="catalog-filter-label" for="motel">Мотель</label>
+                  <label class="control">
+                    <input class="catalog-filter-item visually-hidden"  name="product-type" type="radio" value="motel">
+                    <span class="control-mark control-mark-radio"></span>
+                    <span class="catalog-filter-label">Мотель</span>
+                    </label>
                 </div>
                 <div class="filter-wrapper">
-                  <input class="catalog-filter-item" id="apartment" name="product-type" type="radio" value="apartments">
-                  <label class="catalog-filter-label" for="apartment">Апартаменты</label>
+                  <label class="control">
+                    <input class="catalog-filter-item visually-hidden"  name="product-type" type="radio" value="apartments">
+                    <span class="control-mark control-mark-radio"></span>
+                    <span class="catalog-filter-label">Апартаменты</span>
+                  </label>
                 </div>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <input class="catalog-filter-item catalog-filter-range" id="booking-price" name="booking-price" type="range" min="0" max="11000" step="500" value="7000">
+                <legend class="catalog-filter-title catalog-filter-title-margin-bottom">Стоимость, ₽:</legend>
+                <p class="filter-price-wrapper">
+                <label for="booking-price-min"><span class="visually-hidden">Укажите минимальную стоимость</span></label>
+                <input class="catalog-filter-item catalog-filter-price price-min" id="booking-price-min" name="booking-price" type="number" placeholder="0">
+                <label for="booking-price-max"><span class="visually-hidden">Укажите максимальную стоимость</span></label>
+                <input class="catalog-filter-item catalog-filter-price price-max" id="booking-price-max" name="booking-price" type="number" placeholder="9000">
+                </p>
+                <div class="range">
+                  <div class="range-area">
+                    <div class="range-scale" style="left: 0; width: 227px;">
+                      <label for="button-min"><span class="visually-hidden">Перетяните ползунок с минимальной стоимостью</span></label>
+                      <button class="filter-price-button button-min" id="button-min" type="button"></button>
+                      <label for="button-nax"><span class="visually-hidden">Перетяните ползунок с максимальной стоимостью</span></label>
+                      <button class="filter-price-button button-max" id="button-max" type="button"></button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <div class="filter-button-wrapper">
                 <button class="filter-submit-button" type="submit" name="filter-submite" value="Применить">Применить</button>

@@ -110,7 +110,7 @@
         <section class="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="email-subscribe">
               <span class="visually-hidden">Введите ваш Email</span>
             </label>
@@ -154,6 +154,46 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="modal-container">
+      <div class="modal-booking">
+        <button class="close-button" type="button">
+          <span class="visually-hidden">зыкрыть окно</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form grid-container" method="post" action="https://echo.htmlacademy.ru/">
+              <label for="check-in" class="modal-input-label grid-1">Дата заезда:</label>
+              <input class="modal-input grid-2" id="check-in" type="date" name="check-in" placeholder="27 апреля 2020" required>
+              <span class="input-notation input-notation-wrong grid-3">Мы не можем отправить вас в прошлое.</span>
+              <label for="check-out" class="modal-input-label grid-4">Дата выезда:</label>
+              <input class="modal-input grid-5" id="check-out" type="date" name="check-out" placeholder="1 сентября 2021" required>
+              <span class="input-notation grid-6">На эти даты есть свободные номера. Пока есть.</span>
+              <label for="adult" class="modal-input-label grid-7">Взрослые:</label>
+              <div class="person-wrapper grid-8">
+                <button class="button-counter button-counter button-counter-minus" type="button"><span class="visually-hidden">уменьшить количество</span></button>
+                <input class="modal-input-person" id="adult" type="number" name="adult" placeholder="2" required>
+                <button class="button-counter button-counter-plus" type="button"><span class="visually-hidden">увеличить количество</span></button>
+              </div>
+              <div class="notation-wrapper grid-9">
+                <label for="children" class="modal-input-label">Дети:</label>
+                <span class="form-label">
+                  <label class="tooltip-toggle-label"><span class="visually-hidden">разъяснение про детей</span></label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button"></button>
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+              </div>
+              <div class="person-wrapper grid-10">
+                <button class="button-counter button-counter-minus" type="button"><span class="visually-hidden">уменьшить количество</span></button>
+                <input class="modal-input-person" id="children" type="number" name="children" placeholder="1" required>
+                <button class="button-counter button-counter-plus" type="button"><span class="visually-hidden">увеличить количество</span></button>
+              </div>
+              <button class="button-submit grid-11" type="submit">найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
