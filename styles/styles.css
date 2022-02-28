@@ -1669,6 +1669,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0px;
+  min-width: auto;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1713,10 +1714,12 @@ body {
 }
 
 .modal-input-label-adult {
+  min-width: auto;
   margin-right: 76px;
 }
 
 .modal-input-label-children {
+  min-width: auto;
   margin-right: 12px;
 }
 
