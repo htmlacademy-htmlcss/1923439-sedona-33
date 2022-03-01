@@ -1585,6 +1585,20 @@ body {
   cursor: pointer
 }
 
+.close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.close-button:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.close-button:active {
+  opacity: 0.6;
+  outline: none;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -1654,6 +1668,24 @@ body {
   height: 50px;
 }
 
+.modal-input:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-input:focus {
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.modal-input:active {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+
 .modal-input::placeholder {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -1709,6 +1741,21 @@ body {
   background-color: #F2F2F2;
   border: none;
   text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.modal-input-person:focus {
+  outline: 3px solid #83B3D3;
+  outline-offset: -6px;
+}
+
+.modal-input-person:active {
+  outline: none;
 }
 
 .modal-input-label-adult {
@@ -1736,6 +1783,9 @@ body {
 }
 
 .button-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 46px;
   height: 50px;
@@ -1746,6 +1796,20 @@ body {
   cursor: pointer;
 }
 
+.button-counter:hover .button-icon {
+  color: rgba(0, 0, 0, 1)
+}
+
+.button-counter:focus {
+  outline: 3px solid #83B3D3;
+  outline-offset: -15px;
+}
+
+.button-counter:active {
+  outline: none;
+
+}
+
 .button-counter-plus {
   border-radius: 0 4px 4px 0;
 }
@@ -1754,30 +1818,6 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
-.button-counter::before {
-  position: absolute;
-  content: "";
-  width: 13px;
-  height: 1px;
-  background: #000000;
-  opacity: 0.3;
-  transform: translateX(-50%);
-  top: 45%;
-
-}
-
-.button-counter-plus::after {
-  position: absolute;
-  content: "";
-  width: 13px;
-  height: 1px;
-  background: #000000;
-  opacity: 0.3;
-  top: 50%;
-  transform: translateX(-50%) rotate(90deg);
-  z-index: 1;
-
-}
 
 .button-submit {
   display: flex;
@@ -1798,6 +1838,21 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: #68A2CA;
+}
+
+.button-submit:focus {
+  background: #68A2CA;
+  outline: 3px solid #756257;
+  border-radius: 10px;
+}
+
+.button-submit:active {
+  opacity: 0.6;
+  outline: none;
 }
 
 .input-notation {
@@ -1862,6 +1917,15 @@ body {
   border: none;
   cursor: pointer;
   margin-right: 22px;
+}
+
+.tooltip-toggle:focus {
+  outline: 3px solid #756257;
+  outline-offset: 2px;
+}
+
+.tooltip-toggle:hover {
+  background-color: #68A2CA;
 }
 
 .tooltip-toggle:hover + .tooltip-text {
