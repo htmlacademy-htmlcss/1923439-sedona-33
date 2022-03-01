@@ -1765,7 +1765,7 @@ body {
 }
 
 .modal-input-person::placeholder {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
