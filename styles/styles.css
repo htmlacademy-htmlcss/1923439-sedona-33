@@ -22,14 +22,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  width: 1280px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   margin: 0 auto;
-  background-color: lightgray;
+  background-color: #E5E5E5;
   color: #000000
 }
 
@@ -76,9 +75,10 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
-  width: 450px;
+  width: 520px;
   margin: 0;
   margin-right: auto;
   padding: 0;
@@ -86,6 +86,7 @@ body {
 }
 
 .navigation-list-user {
+  flex-wrap: wrap;
   margin-right: 0;
   justify-content: flex-end;
   align-items: center;
@@ -467,7 +468,7 @@ body {
   justify-content: center;
   margin: auto;
   width: 575px;
-  height: 60px;
+  min-height: 60px;
   background: #756257;
   border-radius: 10px;
   text-decoration: none;
@@ -563,9 +564,8 @@ body {
 .subscribe-area {
   width: 600px;
   height: 60px;
-  box-sizing: border-box;
   padding: 8px 22px 8px 21px;
-  background-color: #F2F2F2;
+  background-color: rgba(242, 242, 242, 1);
   border-radius: 10px 0px 0px 10px;
   border: none;
   font-family: "PT Sans", sans-serif;
@@ -574,7 +574,6 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-  opacity: 0.6;
   box-sizing: border-box;
 }
 
@@ -598,8 +597,8 @@ body {
 
 .subscribe-area:invalid {
   background: #FFFFFF;
-  border: 2px solid #FF5757;
-  outline: none;
+  outline: 2px solid #FF5757;
+  outline-offset: -2px;
   box-sizing: border-box;
 }
 
@@ -628,6 +627,8 @@ body {
 
 .social-list {
   display: flex;
+  width: 111px;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
   padding: 0;
@@ -694,7 +695,7 @@ body {
   display: flex;
   align-items: center;
   padding: 15px;
-  padding-right: 0;
+  padding-right: 7px;
 }
 
 .footer-link:hover {
@@ -1230,7 +1231,7 @@ body {
 
 .search-results-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto;
   column-gap: 16px;
   row-gap: 9px;
   list-style: none;
@@ -1247,7 +1248,7 @@ body {
 
 .product-card-article {
   display: grid;
-  grid-template-columns: 151px 151px;
+  grid-template-columns: minmax(151px, auto) minmax(151px, auto);
   grid-template-rows: 206px min-content min-content min-content min-content;
   row-gap: 16px;
   padding: 20px;
@@ -1307,6 +1308,7 @@ body {
   width: 300px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   grid-row: 4/5;
 }
 
@@ -1417,7 +1419,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 620px;
-  height: 60px;
+  min-height: 60px;
   background: #83B3D3;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1443,8 +1445,8 @@ body {
 }
 
 .pagination-list {
-  width: 400px;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -1680,10 +1682,10 @@ body {
 
 .modal-input:active {
   background: #FFFFFF;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
+  outline-offset: -2px;
   box-sizing: border-box;
   border-radius: 4px;
-  outline: none;
 }
 
 .modal-input::placeholder {
@@ -1740,13 +1742,14 @@ body {
   width: 37px;
   background-color: #F2F2F2;
   border: none;
+  padding: 0;
+  padding-bottom: 3px;
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
-  color: #000000;
 }
 
 .modal-input-person:focus {
@@ -1794,9 +1797,11 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.button-counter:hover .button-icon {
+.button-counter:hover  {
   color: rgba(0, 0, 0, 1)
 }
 
@@ -1806,8 +1811,8 @@ body {
 }
 
 .button-counter:active {
+  color: rgba(0, 0, 0, 0.2);
   outline: none;
-
 }
 
 .button-counter-plus {
